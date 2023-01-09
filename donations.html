@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Care Club</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+  crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" style="	font-weight: bold;font-size: 1.6rem; ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.php"> <img src="images/logo_white.png" alt="Care_club_Logo" class="logo" style="width: 99px;" > </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="donations.html" style = "background-color: #CD9703; color: #fff">Donate!</a></li>
+        <li><a href="shop.php">Shop</a></li>
+        <li><a href="volunteer.php">Become a Volunteer</a></li>
+      </ul>
+
+    </div>
+  </nav>
+  
+<div class="container">
+
+    <header>
+  <div class="overlay"></div>
+
+  
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="images/pexels-julia-m-cameron-6893778.mp4" type="video/mp4">
+  </video>
+
+ 
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="text-white">
+        <h1 class="donationh1">The manner of giving is worth more than the gift!</h1>
+        <h2 class="lead mb-0"> - Team Care Club</h2>
+      </div>
+    </div>
+  </div>
+</header>
+    
+
+    </div>
+    
+
+<body>
+    
+
+    
+
+   <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="images/donate.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="section-title position-relative mb-4">
+                      <!-- <br><br><br><br><br> -->
+                        <h2 class="donationh2">Why Choose Us</h2>
+                        <h1 class="display-4">Be Wise through Charity</h1>
+                    </div>
+                    
+                    <p>The most effective solutions To build the world we need, we must choose to see a better way beyond the current reality, believe that a better way is possible, and commit to creating it.Together, we can build a world where everyone has the safety they deserve. Join us to make our family more brighter and stronger.<br>
+                    </p>
+                    <br>
+                     <div class="section-title position-relative mb-4">
+                        <h2>Join Care Club Today!</h2>
+                        
+                    </div>
+                    <br>
+                    
+                    <div class="row pt-3 mx-0">
+                        <div class="col-3 px-0">
+                            <div class="bg-success text-center p-4">
+                                <h1  id = "count1" class="text-white" data-toggle="counter-up">899</h1>
+                                <h6 class="text-uppercase text-white">World <span class="d-block">Donators</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-primary text-center p-4">
+                                <h1 id="count2" class="text-white" data-toggle="counter-up">0</h1>
+                                <h6 class="text-uppercase text-white">Number of <span class="d-block">Volunteers</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-secondary text-center p-4">
+                                <h1 id="count3" class="text-white" data-toggle="counter-up">0</h1>
+                                <h6 class="text-uppercase text-white">Children<span class="d-block"> Educated</span></h6>
+                            </div>
+                        </div>
+                        <div class="col-3 px-0">
+                            <div class="bg-warning text-center p-4">
+                                <h1 id="count4" class="text-white" data-toggle="counter-up">0</h1>
+                                <h6 class="text-uppercase text-white">Amount spent for <span class="d-block">Cause</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+ function counter(id, start, end, duration) {
+  let obj = document.getElementById(id),
+   current = start,
+   range = end - start,
+   increment = end > start ? 1 : -1,
+   step = Math.abs(Math.floor(duration / range)),
+   timer = setInterval(() => {
+    current += increment;
+    obj.textContent = current;
+    if (current == end) {
+     clearInterval(timer);
+    }
+   }, step);
+ }
+ counter("count1", 2999, 6438, 1000);
+ counter("count2", 0, 276, 2500);
+ counter("count3", 2799, 5643, 300);
+ counter("count4", 21999, 26832, 200);
+});
+
+    </script>
+    <!-- About End -->
+
+    
+    
+    
+    
+    
+<div class="wrapper">
+        <h2>Donations Form</h2>
+        <form method="POST">
+            <h4>Account</h4>
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="First Name"  class="name" required="">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Last Name"  class="name" required="">
+                    <i class="fa fa-user icon"></i>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="email" placeholder="Email Adress"  class="name" required>
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <h4> Date of Birth</h4>
+                    <input type="text" placeholder="DD"  class="dob">
+                    <input type="text" placeholder="MM"  class="dob">
+                    <input type="text" placeholder="YYYY"  class="dob">
+                </div>
+                <div class="input-box">
+                    <h4> Gender</h4>
+                    <input type="radio" id="b1" name="gender"  checked class="radio">
+                    <label for="b1">Male</label>
+                    <input type="radio" id="b2" name="gender"  class="radio">
+                    <label for="b2">Female</label>
+                </div>
+            </div>
+
+            
+            <div id="smart-button-container">
+                <div class="input-group">
+                <div class="input-box">
+                    
+                    <input type="text" placeholder="Message"  class="name" required="" name="descriptionInput" id="description" maxlength="250" value=""> <i class="fa fa-comments icon"></i>
+                   
+                </div>
+                     <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">Please enter a message</p>
+                </div>
+
+                
+<div class="input-group">
+  <div class="input-box">
+      <input name="amountInput" type="number" id="amount" placeholder="Amount"  class="name" required>
+      <i class='fas fa-dollar-sign icon'></i>
+  </div>
+  <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter an amount!</p>
+</div>
+                <!-- <div class="input-group" >
+                    
+                    <label for="amount"><h4>Amount </h4></label><input name="amountInput" type="number" id="amount" value="" ><label for="amount"> <h4> &nbsp;CAD </h4></label></div>
+                 -->
+                <!-- <p id="priceLabelError" style="visibility: hidden; color:red; text-align: center;">Please enter an amount!</p> -->
+                
+                
+                
+                
+                
+                
+                <div id="invoiceidDiv" style="text-align: center; display: none;"><label for="invoiceid"> </label><input name="invoiceid" maxlength="127" type="text" id="invoiceid" value="" ></div>
+      <p id="invoiceidError" style="visibility: hidden; color:red; text-align: center;">Please enter an Invoice ID</p>
+    <div style="text-align: center; margin-top: 0.625rem;" id="paypal-button-container"></div>
+  </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=CAD" data-sdk-integration-source="button-factory"></script>
+  <script>
+  function initPayPalButton() {
+    var description = document.querySelector('#smart-button-container #description');
+    var amount = document.querySelector('#smart-button-container #amount');
+    var descriptionError = document.querySelector('#smart-button-container #descriptionError');
+    var priceError = document.querySelector('#smart-button-container #priceLabelError');
+    var invoiceid = document.querySelector('#smart-button-container #invoiceid');
+    var invoiceidError = document.querySelector('#smart-button-container #invoiceidError');
+    var invoiceidDiv = document.querySelector('#smart-button-container #invoiceidDiv');
+
+    
+    var elArr = [description, amount];
+
+    if (invoiceidDiv.firstChild.innerHTML.length > 1) {
+      invoiceidDiv.style.display = "block";
+    }
+
+    var purchase_units = [{"amount":{"currency_code":"CAD","value":1,"breakdown":{"item_total":{"currency_code":"CAD","value":1}}},"items":[{"name":"item name","unit_amount":{"currency_code":"CAD","value":1},"quantity":"1","category":"DONATION"}]}]
+
+    function validate(event) {
+      return event.value.length > 0;
+    }
+
+    paypal.Buttons({
+      style: {
+        color: 'gold',
+        shape: 'pill',
+        label: 'donate',
+        layout: 'vertical',
+        
+      },
+
+      onInit: function (data, actions) {
+        actions.disable();
+
+        if(invoiceidDiv.style.display === "block") {
+          elArr.push(invoiceid);
+        }
+
+        elArr.forEach(function (item) {
+          item.addEventListener('keyup', function (event) {
+            var result = elArr.every(validate);
+            if (result) {
+              actions.enable();
+            } else {
+              actions.disable();
+            }
+          });
+        });
+      },
+
+      onClick: function () {
+        // name error
+        // if (name.value.length < 1) {
+        //   nameerror.style.visibility = "visible";
+        // } else {
+        //   nameerror.style.visibility = "hidden";
+        // }
+
+        if (description.value.length < 1) {
+          descriptionError.style.visibility = "visible";
+        } else {
+          descriptionError.style.visibility = "hidden";
+        }
+
+        if (amount.value.length < 1) {
+          priceError.style.visibility = "visible";
+        } else {
+          priceError.style.visibility = "hidden";
+        }
+
+        if (invoiceid.value.length < 1 && invoiceidDiv.style.display === "block") {
+          invoiceidError.style.visibility = "visible";
+        } else {
+          invoiceidError.style.visibility = "hidden";
+        }
+
+        purchase_units[0].description = description.value;
+        purchase_units[0].amount.value = amount.value;
+        purchase_units[0].amount.breakdown.item_total.value = amount.value;
+        purchase_units[0].items[0].unit_amount.value = amount.value;
+
+        if(invoiceid.value !== '') {
+          purchase_units[0].invoice_id = invoiceid.value;
+        }
+      },
+
+      createOrder: function (data, actions) {
+        return actions.order.create({
+          purchase_units: purchase_units,
+        });
+      },
+
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function (orderData) {
+
+          // Full available details
+          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+          // Show a success message within this page, e.g.
+          const element = document.getElementById('paypal-button-container');
+          element.innerHTML = '';
+          element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+          // Or go to another URL:  actions.redirect('thank_you.html');
+          
+        });
+      },
+
+      onError: function (err) {
+        console.log(err);
+      }
+    }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+  </script>
+        </form>
+    
+    
+    </div>
+    <section class="section-meals">
+      <ul class="meals-showcase clearfix">
+          <li>
+              <figure class="meal-photo">
+                  <img src="images/1.jpg" alt="Korean bibimbap with egg and vegetables">
+              </figure>
+          </li>
+          <li>
+              <figure class="meal-photo">
+                  <img src="images/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+              </figure>
+          </li>
+          <li>
+              <figure class="meal-photo">
+                  <img src="images/3.jpg" alt="Chicken breast steak with vegetables">
+              </figure>
+          </li>
+          <li>
+              <figure class="meal-photo">
+                  <img src="images/4.jpg" alt="Autumn pumpkin soup">
+              </figure>
+          </li>
+      </ul>
+      <ul class="meals-showcase clearfix">
+          <li>
+              <figure class="meal-photo">
+                  <img src="images/5.jpg" alt="Paleo beef steak with vegetables">
+              </figure>
+          </li>
+          <li>
+              <figure class="meal-photo">
+                  <img src="images/6.jpg" alt="Healthy baguette with egg and vegetables">
+              </figure>
+          </li>
+          <li>
+              <figure class="meal-photo">
+                  <img src="images/7.jpg" alt="Burger with cheddar and bacon">
+              </figure>
+          </li>
+          <li>
+              <figure class="meal-photo">
+                  <img src="images/8.jpg" alt="Granola with cherries and strawberries">
+              </figure>
+          </li>
+      </ul>
+  </section>
+</body>
+
+<footer>
+  <div class="container-footer">
+      <div class="upper-footer">
+       
+              <ul>
+                  <li><a href="#">About Us </a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Become a Volunteer</a></li>
+                  <li><a href="#">Shipping services</a></li>
+                  <li><a href="#">FAQ's</a></li>
+              </ul>
+      
+              <ul class="social-links">
+                  <li><a href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://in.pinterest.com/" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                  <li><a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
+             
+              </ul>
+      </div>
+
+      <hr>
+  <div class="copyright">
+      <p>Care Club © 2022 - ALL RIGHTS RESERVED </p>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
+

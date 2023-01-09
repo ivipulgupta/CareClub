@@ -1,0 +1,262 @@
+* {
+    margin: 00px;
+    padding: 00px;
+    box-sizing: content-box;
+}
+
+body {
+    background-color:white;
+    font-family: "Montserrat";
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    /* padding: 20px; */
+    align-items: center;
+    justify-content: center;
+    /* background-color: #e6ebe0; */
+    flex-direction: row;
+    flex-flow: wrap;
+
+}
+
+.font {
+    height: 375px;
+    width: 250px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.top {
+    height: 30%;
+    width: 300px;
+    border: 1px solid black;
+    background-color: #020133;
+    position: relative;
+    z-index: 5;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+p {
+    padding-bottom: 5px;
+}
+
+.bottom {
+    height: 85%;
+    width: 300px;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.top img {
+    height: 120px;
+    width: 120px;
+    background-color: #e6ebe0;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+
+.bottom p {
+    position: relative;
+    top: 60px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+    text-emphasis: spacing;
+}
+
+.bottom .desi {
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    font-weight: normal;
+}
+
+.bottom .no {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.barcode img {
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    margin: 0px 4px;
+}
+
+.barcode {
+    text-align: center;
+    position: relative;
+    top: 70px;
+}
+
+.back {
+    height: 375px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: #020133;
+
+}
+
+.qr img {
+    height: 80px;
+    width: 100%;
+    margin: 20px;
+    background-color: white;
+}
+
+.Details {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+.details-info {
+    color: white;
+    text-align: left;
+    padding: 5px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 22px;
+}
+
+.logo {
+    height: 40px;
+    width: 150px;
+    padding: 40px;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    color: white;
+
+}
+
+
+.padding {
+    padding-right: 20px;
+}
+
+.button-container {
+    /* align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-44%, -5%); */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    /* padding: 20px; */
+    align-items: center;
+    justify-content: center;
+    /* background-color: #e6ebe0; */
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+/* CSS */
+.button-3 {
+    appearance: none;
+    background-color: #CD9703;
+    border: 1px solid rgba(27, 31, 35, .15);
+    width: 120px;
+    margin-top: 40px;
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.margin-back {
+    margin-left: 33px;
+}
+
+.margin-download {
+    margin-left: 20px;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.button-3:hover {
+    background-color: #CD9703;
+}
+
+.button-3:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.button-3:disabled {
+    background-color: #CD9703;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.button-3:active {
+    background-color: #CD9703;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+@media screen and (max-width:400px) {
+    .container {
+        height: 130vh;
+    }
+
+    .container .front {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        height: 130vh;
+    }
+
+    .container .front {
+        margin-top: 50px;
+    }
+
+    .margin-download {
+        margin-left: 10px;
+    }
+
+}

@@ -1,0 +1,1340 @@
+/* blue color: #020133;
+golden color: #CD9703; */
+@keyframes spin { 
+	100% { 
+	  transform: rotateZ(360deg);
+	}
+}
+
+@keyframes slideIn {
+	0% {
+	  /* filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); */
+	  opacity: 0;
+	  margin-left: -325px;
+	}
+	100% {
+	  /* filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); */
+	  opacity: 1;
+	  margin-left: 0px;
+	}
+  }
+  
+@keyframes transformShape
+{
+    0%,
+  100% { border-radius: 34% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 52% 49% / 30% 30% 71% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+  }
+body{
+    font-family: "Montserrat";
+	margin: 0;
+	font-size: 16px;
+}
+div{
+    width: auto;
+    height: auto;
+}
+
+.navbar-inverse {
+    background-color: #020133;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: #CD9703;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #e7e5e5;
+}
+/* .navbar-inverse .logo{
+    background-color: #f4f3f3;
+    width: 112px;
+    margin-right: 20px;
+}  */
+
+/* --------------------------------HEADER--------------------- */
+.container{
+	width: 100%;
+	padding: 0%;
+	margin: 0%;
+}
+.home .hero-text-box{
+	display: grid;
+	grid-template-rows: auto auto auto auto ;
+	padding: 10px 45px;
+	text-align: center;
+	z-index: 1;
+	margin: 127px 220px 10px;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .home span{
+	padding: 12px;
+	background-color: #fff;
+	color: #CD9703;;
+	border-radius: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	word-spacing: 5px;
+  }
+  
+  .home h1{
+	color: #fff;
+	font-size: 60px;
+	font-weight: 600;
+	padding: 0;
+	line-height: 60px;
+	word-spacing: 15px;
+  }
+  
+   p{
+	word-spacing: 2px;
+  }
+  .home p{
+	color: white;
+  }
+  
+  .home .btn-h{
+	color: white;
+	background-color: #020133;
+	display: inline-block;
+	padding: 9px 14px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-size: 24px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  .home .btn-h:hover{
+	background-color: #fff;
+	color: #020133;
+	transition:  background-color 0.5s linear, color 0.5s linear;
+  }
+  .home .banner-h{
+	color: #fff;
+	background-color: #CD9703;
+  }
+  
+  .home .banner-h:hover{
+	background-color: #fff;
+	color: #CD9703;
+	transition: all linear 0.3s;
+  }
+  
+  .home .grid-container-header{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding: 8px;
+	justify-content: space-between;
+  }
+
+  /* ----------------------Start Binali Css------------------------ */
+  h1{
+	padding-top: 54px;
+	text-align: center;
+  }
+
+  .section-title{
+	text-align: center;
+  }
+  .container_events{
+		padding: 50px 80px;
+  }
+
+  .col-md-4{
+	padding: 30px;
+  }
+
+  .card{
+	background-color: white;
+	border-radius: 20px;
+  }
+
+  .box-shadow{
+	box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+  }
+
+  .card-img-top{
+	padding: 20px;
+  }
+  .card-img-top:hover{
+	opacity: 0.6;
+	transform: scale(1.1);
+	transition: all linear 0.3s;
+  }
+
+  .card-body{
+	padding: 0px 20px 20px 20px;
+  }
+
+  .btn{
+	background-color: #020133;
+	color: white;
+	font-size: 17px;
+	margin-top: 5px;
+	float: right;
+  }
+  .btn:hover{
+	background-color: white;
+	color: #020133;
+	border: #020133 solid 1px;
+	transition: all linear 0.3s;
+  }
+
+    /* ----------------------End Binali Css------------------------ */
+  @media only screen and (max-width: 1024px) {
+	.home .banner-area{
+		width: 35em;
+		height: 32em;
+	}
+	.home span{
+		font-size: 15px;
+		padding: 8px;
+	}
+	.home h1{
+		font-size: 45px;
+	}
+	.home .btn-h{
+		padding: 12px 15px;
+		font-size: 20px;
+	}
+  }
+  
+   .container-home {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+    background-image: url(../images/home1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shape {
+	background: #CD9703;
+	height: 500px;
+	width: 550px;
+	border-radius: 30% 50% 20% 40%;
+  	animation: transformShape 20s ease-in-out infinite both alternate;
+	opacity: 0.8;
+	position: absolute;
+	bottom: 14%;
+}
+
+/* ---------------------FOOTER SECTION---------------------------*/
+
+footer{
+	background-color: #020133;
+    padding: 50px 35px;
+}
+.upper-footer{
+	/* display: grid;
+	grid-template-columns: auto auto; */
+	justify-content: center;
+	align-items: center;
+	/* grid-gap: 50px; */
+}
+footer ul{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap: 20px;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	margin-bottom: 26px;
+}
+footer ul li a{
+	font-size: 14px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #cecccc;
+	display: block;
+	transition: all 0.3s ease;
+}
+footer ul li a:hover{
+	color: #ffffff;
+	transition: all linear 0.3s;
+}
+
+footer .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+footer .social-links a:hover{
+	color: #4d8ed0;
+	background-color: #ffffff;
+	transition: all linear 0.3s;
+}
+footer .copyright{
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
+}
+.copyright img{
+	width: 20%;
+	height: auto;
+}
+.copyright p{
+	padding-top: 20px;
+	color: white;
+	cursor: pointer;
+}
+.copyright p:hover{
+	transform: scale(1.1);
+	transition: all linear 0.3s;
+}
+@media only screen and (max-width: 1024px){
+	.footer{
+		padding: 50px 0px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.footer{
+		padding: 50px 30px;
+	}
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+/*
+Changes of Saikumar start 20-Jul-2022
+
+*/
+
+.section{
+	padding: 4rem 0 2rem;
+  }
+  
+  .section-title, .section-subtitle{
+	text-align: center;
+  }
+  
+  .service_title{
+	margin-bottom: 6%;
+  }
+  
+  .section-subtitle{
+	display: block;
+	font-size: 16px;
+	color: var(--first-color);
+	font-weight: var(--font-medium);
+	margin-bottom: var(--mb-1);
+  }
+  
+
+  .services__container{
+	row-gap: 2.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .services__content{
+	text-align: center;
+  }
+  .services__content i{
+	font-size: 50px;
+	color: #CD9703;
+  }
+  .services__img{
+	width: 60px;
+	height: 55px;
+  }
+  
+  .services__title{
+	font-size: 25px;
+	color: var(--title-color);
+  }
+  
+  .services__description{
+	padding: 0 1.5rem;
+	font-size: 17px;
+	text-align: center;
+	margin-bottom: 38%;
+  }
+
+  .bd-container{
+	max-width: 960px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 38px;
+  }
+
+  .bd-grid{
+	display: grid;
+	gap: 3rem;
+  }
+  
+  
+/*
+Changes of Saikumar end 20-Jul-2022
+*/
+/*
+Changes of Saikumar start 20-Jul-2022
+*/
+
+.services__container{
+    margin-top: var(--mb-6);
+  }
+  
+  /*
+Changes of Saikumar end 20-Jul-2022
+*/
+
+/* VIPUL changes */
+.rightc {
+	padding: 25px 40px;
+	font-size: larger;
+  }
+  .field {
+	width: 100%;
+	border: 1px solid rgba(1, 1, 1, 1);
+	outline: none;
+	background-color: var(--field-color);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	border-radius: 0.5rem;
+	margin-bottom: 22px;
+	transition: 0.3s;
+  }
+  .contact-box {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--body-color);
+	border-radius: 0.5rem;
+	box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  }
+  
+  .leftc {
+	background: url("../images/img.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+  }
+  
+  .contact__container {
+	text-align: center;
+  }
+  
+  .contact__description {
+	margin-bottom: 15px;
+	font-size: 19px;
+  }
+  .containerc {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+  }
+  .imgc {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 40px;
+  }
+  .menu__container {
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+  }
+  
+  .menu__content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--container-color);
+	border-radius: 0.5rem;
+	box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+	padding: 0.75rem;
+  }
+  
+  .menu__img {
+	width: 100px;
+	align-self: center;
+	border-radius: 50%;
+	margin-bottom: var(--mb-2);
+  }
+  
+  .menu__name,
+  .menu__preci {
+	font-weight: var(--font-semi-bold);
+	color: var(--title-color);
+  }
+  
+  .menu__name {
+	font-size: var(--normal-font-size);
+  }
+  
+  .menu__detail,
+  .menu__preci {
+	font-size: var(--small-font-size);
+  }
+  
+  .menu__detail {
+	margin-bottom: var(--mb-1);
+  }
+  
+  .menu__button {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	padding: 0.625rem 0.813rem;
+	border-radius: 0.5rem 0 0.5rem 0;
+  }
+
+/*/* ----------------------------------------------------------------------------------------------------- */
+/* MEALS */
+/* -/* ----------------------------------------------------------------------------------------------------- */
+.section-meals {
+	padding: 30px 60px;
+	background-color: #020133;
+	margin-bottom: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+	padding: 0%;
+	margin: 0%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 93%;
+    height: auto;
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+.cus-photo{
+	 margin: 0;
+    overflow: hidden;
+    background-color: #000;
+	border:hidden;
+	border-radius:2px
+	}
+.cus-photo img {
+    opacity: 0.8;
+    
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.cus-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.00);
+    -ms-transform: scale(1.00);
+    transform: scale(1.00);
+}
+.menu-photo{
+	 margin: 0;
+    overflow: hidden;
+    background-color: #000;
+	border:hidden;
+	border-radius:2px
+	}
+.menu-photo img {
+    opacity: 1;
+    
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+.menu-photo img:hover {
+    opacity: 0.7;
+    -webkit-transform: scale(1.00);
+    -ms-transform: scale(1.00);
+    transform: scale(1.00);
+}
+h1:after {
+    display: block;
+    height: 2px;
+    background-color: #CD9703;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* binali */
+/* ------------------------Binali CSS-------------------------- */
+.home h2{
+	color: #fff;
+	font-size: 40px;
+	font-weight: 600;
+	padding: 0;
+	line-height: 40px;
+	word-spacing: 12px;
+  }
+
+  .container_form{
+		padding: 20px;
+  }
+
+	.container_volunteer{
+		padding: 20px;
+		align-items: center;
+	}
+
+	.c
+
+	.card-registration .select-input.form-control[readonly]:not([disabled]) {
+		font-size: 1rem;
+		line-height: 2.15;
+		padding-left: .75em;
+		padding-right: .75em;
+		}
+		.card-registration .select-arrow {
+		top: 13px;
+		}
+  /* ------------------------Binali CSS-------------------------- */
+
+
+  /* ----------------------Start Binali Css------------------------ */
+  h1{
+	padding-top: 20px;
+	text-align: center;
+  }
+
+  .section-title{
+	text-align: center;
+  }
+
+  
+  .container_events{
+		padding: 50px 80px;
+		/* margin-bottom: 60px; */
+		margin-top: 60px;
+  }
+
+  .col-md-4{
+	padding: 30px;
+  }
+
+  .card{
+	background-color: white;
+	border-radius: 20px;
+  }
+
+  .box-shadow{
+	box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+  }
+
+  .card-img-top{
+	padding: 20px;
+  }
+
+  .card-body{
+	padding: 0px 20px 20px 20px;
+  }
+
+  .btn{
+	background-color: #020133;
+	color: white;
+  }
+
+
+    /* ----------------------End Binali Css------------------------ */
+  @media only screen and (max-width: 1024px) {
+	.home .banner-area{
+		width: 35em;
+		height: 32em;
+	}
+	.home span{
+		font-size: 15px;
+		padding: 8px;
+	}
+	.home h1{
+		font-size: 45px;
+	}
+	.home .btn-h{
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+  }
+  
+   .container-home {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+    background-image: url(../images/home1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container_form .py-5 .h-100{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/* --------------------Binali CSS-------------------- */
+
+section{
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.card_form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.5rem;
+	box-shadow: 0 5px 25px rgb(1 1 1 / 15%);
+	padding:40px;
+	
+}
+
+.mb-3{
+	padding:10px;
+}
+
+.custom-select {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.col-md-5{
+	padding-left: 25px;
+}
+
+.col-md-3{
+	padding-right: 25px;
+}
+
+.col-md-6{
+	padding: 10px 25px ;
+}
+
+.btn-register{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.custom-control .custom-checkbox{
+	margin-left: 40px;
+}
+.align_form{
+	align-items: center;
+}
+
+.mb-5{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.container_form{
+	max-width: 70%;
+	display: block;
+	padding: 20px;
+	border-radius: 30px;
+	text-decoration: none;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+#registrationForm{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.container-volunteer {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	opacity: 80%;
+    /* background-image: url(images/volunteer_banner.jpg); */
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.336)), url(../images/volunteer_banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.336)), url(../images/volunteer_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------Binali CSS-------------------- */
+.shape {
+	background: #CD9703;
+	height: 500px;
+	width: 550px;
+	border-radius: 30% 50% 20% 40%;
+  	animation: transformShape 20s ease-in-out infinite both alternate;
+	opacity: 0.8;
+	position: absolute;
+	bottom: 14%;
+}
+/*-- sai kumar start  */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+  .wrapper{
+	background-color: #fff;
+	width: 660px;
+	padding: 25px;
+	margin: 25px auto 0;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  }
+  .wrapper h2{
+	background-color: #fcfcfc;
+	color: #CD9703;
+	font-size: 24px;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	border: 1px dotted #333;
+  }
+  h4{
+	padding-bottom: 5px;
+	color: #CD9703;
+  }
+  .input-group{
+	margin-bottom: 8px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	padding: 5px 0;
+  }
+  .input-box{
+	width: 100%;
+	margin-right: 12px;
+	position: relative;
+  }
+  .input-box:last-child{
+	margin-right: 0;
+  }
+  .name{
+	padding: 14px 10px 14px 50px;
+	width: 100%;
+	background-color: #fcfcfc;
+	border: 1px solid #00000033;
+	outline: none;
+	letter-spacing: 1px;
+	transition: 0.3s;
+	border-radius: 3px;
+	color: #333;
+  }
+  .name:focus, .dob:focus{
+	-webkit-box-shadow:0 0 2px 1px #CD9703;
+	-moz-box-shadow:0 0 2px 1px #CD9703;
+	box-shadow: 0 0 2px 1px #CD9703;
+	border: 1px solid #CD9703;
+  }
+  .input-box .icon{
+	width: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	color: #333;
+	background-color: #f1f1f1;
+	border-radius: 2px 0 0 2px;
+	transition: 0.3s;
+	font-size: 20px;
+	pointer-events: none;
+	border: 1px solid #00000033;
+	border-right: none;
+  }
+  .name:focus + .icon{
+	background-color: #CD9703;
+	color: #fff;
+	border-right: 1px solid #CD9703;
+	border: none;
+	transition: 1s;
+  }
+  .dob{
+	width: 30%;
+	padding: 14px;
+	text-align: center;
+	background-color: #fcfcfc;
+	transition: 0.3s;
+	outline: none;
+	border: 1px solid #c0bfbf;
+	border-radius: 3px;
+  }
+  .radio{
+	display: none;
+  }
+  .input-box label{
+	width: 50%;
+	padding: 13px;
+	background-color: #fcfcfc;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	border: 1px solid #c0bfbf;
+  }
+  .input-box label:first-of-type{
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-right: none;
+  }
+  .input-box label:last-of-type{
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+  }
+  .radio:checked + label{
+	background-color: #CD9703;
+	color: #fff;
+	transition: 0.5s;
+  }
+  .input-box select{
+	display: inline-block;
+	width: 50%;
+	padding: 12px;
+	background-color: #fcfcfc;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	outline: none;
+	border: 1px solid #c0bfbf;
+	cursor: pointer;
+	transition: all 0.2s ease;
+  }
+  .input-box select:focus{
+	background-color: #CD9703;
+	color: #fff;
+	text-align: center;
+  }
+  button{
+	width: 100%;
+	background: transparent;
+	border: none;
+	background: #CD9703;
+	color: #fff;
+	padding: 15px;
+	border-radius: 4px;
+	font-size: 16px;
+	transition: all 0.35s ease;
+  }
+  button:hover{
+	cursor: pointer;
+	background: #CD9703;
+  }
+  
+  /*-- sai kumar end */
+ /*
+Changes of Saikumar start 20-Jul-2022
+
+*/
+
+.section{
+	padding: 4rem 0 2rem;
+  }
+  
+  .section-title, .section-subtitle{
+	text-align: center;
+  }
+  
+  .service_title{
+	margin-bottom: 6%;
+  }
+  
+  .section-subtitle{
+	display: block;
+	font-size: 16px;
+	color: var(--first-color);
+	font-weight: var(--font-medium);
+	margin-bottom: var(--mb-1);
+  }
+  
+
+  .services__container{
+	row-gap: 2.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .services__content{
+	text-align: center;
+  }
+  
+  .services__img{
+	width: 50px;
+	height: 45px;
+  }
+  
+  .services__title{
+	font-size: 20px;
+	color: var(--title-color);
+	margin-bottom: 15px;
+  }
+  
+  .services__description{
+	padding: 0 1.5rem;
+	font-size: 15px;
+	text-align: center;
+  }
+
+  .bd-container{
+	max-width: 960px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+  .bd-grid{
+	display: grid;
+	gap: 1rem;
+  }
+  
+  
+/*
+Changes of Saikumar end 20-Jul-2022
+*/
+/*
+Changes of Saikumar start 20-Jul-2022
+*/
+
+.services__container{
+    margin-top: var(--mb-6);
+  }
+  
+
+
+  /*
+Changes of Saikumar end 20-Jul-2022
+*/
+
+  /*
+Changes of Saikumar start 13-Aug-2022
+*/
+
+container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+padding-bottom: 3rem !important;
+}
+
+@media (max-width: 575.98px) {
+    .container-fluid{
+         padding-right: 0;
+    padding-left: 0;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container-fluid{
+        padding-right: 0;
+    padding-left: 0;
+         flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container-fluid{
+          padding-right: 0;
+    padding-left: 0;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .container-fluid{
+         padding-right: 0;
+    padding-left: 0;
+        flex-wrap: nowrap;
+    }
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+col-lg-5 {
+    
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+     flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+mb-5{
+  margin-bottom: 3rem !important;
+}
+
+mb-lg-0{
+    margin-bottom: 0 !important;
+  }
+
+.col-lg-7{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+        flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: calc(1.475rem + 2.7vw) ;
+}
+
+.mx-0 {
+  margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+col-3{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+      flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.px-0 {
+  padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.bg-success {
+  background-color: #F9D030 !important;
+}
+
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+.bg-secondary {
+  background-color: #F14D5D !important;
+}
+
+.bg-warning {
+  background-color: #000080 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+/*
+Changes of Saikumar end 13-Aug-2022
+*/
+.donationh1{
+	margin-top: 70px;
+	font-size: 50px;
+}
+
+/*Chnages of saikumar start 15-Aug */
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header  video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 80px;
+  z-index: 0;
+  -ms-transform: translateX(0%) translateY(0%);
+  -moz-transform: translateX(0%) translateY(0%);
+  -webkit-transform: translateX(0%) translateY(0%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+video {
+  object-fit: fill;
+}
+header .container {
+  position: relative;
+  z-index: 2;
+    top: 35%;
+    bottom: 10px;
+    
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+/*Chnages of saikumar end 15-Aug */
+.position-relative {
+	position: relative;
+}
+.h-100{
+	height: 100%;
+}
+
+.w-100{
+	width: 90%;
+}
+.donationh2{
+	margin-top: 15%;
+}
+
+
+
